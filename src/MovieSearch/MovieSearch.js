@@ -21,7 +21,7 @@ const Search = ({searchMovie,setRate,newRate}) => {
     
         
         <form>
-        <div className="search-btn">
+        <div >
             <input type="text" placeholder="Search for a movie..." 
          onChange={movie}>
             

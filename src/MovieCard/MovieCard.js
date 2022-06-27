@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from 'react-router-dom';
 import './MovieCard.css'
 
 import CardGroup from 'react-bootstrap/CardGroup';
@@ -8,7 +9,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import StarRatingComponent from 'react-star-rating-component';
 
 // export default function MovieCard({movie})
- const MovieCard = ({card}) =>{
+ const MovieCard = ({card,list}) =>{
     
     return (
         // style={{boxShadow: "6px 6px 6px grey"}}
@@ -21,7 +22,10 @@ import StarRatingComponent from 'react-star-rating-component';
                 <Card.Body>
                     <Card.Title>{card.title}</Card.Title>
                     <Card.Text>
-                    {card.description}
+                
+                 {/* <Link to={`${card.description}`}>  
+                    </Link> */}
+                      <Link to={`/MovieTrailer/description/${card.id}`}> {card.description}</Link>
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>

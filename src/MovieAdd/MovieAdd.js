@@ -95,7 +95,7 @@ const MovieAdd = ({add}) => {
           <Button variant="secondary" onClick={handleClose}>
          
             Close
-          </Button>
+          </Button >
           {/* {add(movie);setMovie({title:"",poster:"",Storyline:"",year:"",rating:"",Traiter:""});setShow(false)}}> */}
           <Button variant="primary" onClick={()=>
           {add(movie);handleClose()}}>
